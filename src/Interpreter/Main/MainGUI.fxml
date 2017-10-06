@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interpreter.Main.Main">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="620.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <Menu mnemonicParsing="false" text="New">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#fileButtonPressed" text="File" />
+                        <MenuItem mnemonicParsing="false" onAction="#expressionButtonPressed" text="Expression" />
+                    </items>
+                  </Menu>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#exitButtonPressed" text="Exit" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="outputArea" layoutX="22.0" layoutY="104.0" prefHeight="274.0" prefWidth="557.0" />
+      <Text layoutX="22.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="22.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instructions: Load a new expression through the File menu." />
+   </children>
+</Pane>
